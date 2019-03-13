@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="145.627">
+  <properties />
+  
+  
+            <testcase name="Object_Detail_Page" time="24.451" classname="testcases.trialCNG" />
+                <testcase name="Login" time="64.037" classname="testcases.trialCNG" />
+                <testcase name="CNG_Tile_click" time="0.850" classname="testcases.trialCNG" />
+                <testcase name="Visual_Filters" time="27.851" classname="testcases.trialCNG" />
+                <testcase name="Views_Selection" time="10.442" classname="testcases.trialCNG" />
+                <testcase name="Logout" time="17.996" classname="testcases.trialCNG" />
+      
+</testsuite>

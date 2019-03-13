@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="145646" started-at="2019-01-14T08:54:29Z" finished-at="2019-01-14T08:56:55Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="145646" started-at="2019-01-14T08:54:29Z" finished-at="2019-01-14T08:56:55Z">
+      <class name="testcases.trialCNG">
+        <test-method status="PASS" signature="Login()[pri:0, instance:testcases.trialCNG@5d624da6]" name="Login" duration-ms="64037" started-at="2019-01-14T14:24:29Z" finished-at="2019-01-14T14:25:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="CNG_Tile_click()[pri:0, instance:testcases.trialCNG@5d624da6]" name="CNG_Tile_click" duration-ms="850" started-at="2019-01-14T14:25:33Z" finished-at="2019-01-14T14:25:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CNG_Tile_click -->
+        <test-method status="PASS" signature="Visual_Filters()[pri:0, instance:testcases.trialCNG@5d624da6]" name="Visual_Filters" duration-ms="27851" started-at="2019-01-14T14:25:34Z" finished-at="2019-01-14T14:26:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Visual_Filters -->
+        <test-method status="PASS" signature="Views_Selection()[pri:0, instance:testcases.trialCNG@5d624da6]" name="Views_Selection" duration-ms="10442" started-at="2019-01-14T14:26:02Z" finished-at="2019-01-14T14:26:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Views_Selection -->
+        <test-method status="PASS" signature="Object_Detail_Page()[pri:0, instance:testcases.trialCNG@5d624da6]" name="Object_Detail_Page" duration-ms="24451" started-at="2019-01-14T14:26:12Z" finished-at="2019-01-14T14:26:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Object_Detail_Page -->
+        <test-method status="PASS" signature="Logout()[pri:0, instance:testcases.trialCNG@5d624da6]" name="Logout" duration-ms="17996" started-at="2019-01-14T14:26:37Z" finished-at="2019-01-14T14:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- testcases.trialCNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

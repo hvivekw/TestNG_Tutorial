@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="testcases.trialCNG">
+        <methods>
+          <include name="Views_Selection"/>
+          <include name="CNG_Tile_click"/>
+          <include name="Logout"/>
+          <include name="Object_Detail_Page"/>
+          <include name="Visual_Filters"/>
+        </methods>
+      </class> <!-- testcases.trialCNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
