@@ -1,4 +1,4 @@
-set projectLocation=%cd%
+set projectLocation=%pwd%
 cd %projectLocation%
 set classpath=%projectLocation%\bin;%projectLocation%\lib\*
 echo %classpath%
