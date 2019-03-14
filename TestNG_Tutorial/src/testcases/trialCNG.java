@@ -22,7 +22,10 @@ public class trialCNG {
 	public void Login() throws InterruptedException, IOException{
 
 		/* Initialize Chrome browser */
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
+		
+		String projectPath = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", projectPath+"\\drivers\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 
 		/* Launch CNG application*/
