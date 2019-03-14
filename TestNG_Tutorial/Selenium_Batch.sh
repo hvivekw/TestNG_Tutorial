@@ -1,5 +1,5 @@
 chmod -R 777 *
-projectLocation="$(PWD)"
+projectLocation="$PWD"
 CLASSPATH="${projectLocation}/bin:${projectLocation}/lib/*"
 chmod +x ${projectLocation}/lib/*.jar
 chmod +x ${projectLocation}/bin
