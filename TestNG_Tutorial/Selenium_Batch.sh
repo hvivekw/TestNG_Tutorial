@@ -1,4 +1,3 @@
-cd TestNG_Tutorial
 chmod -R 777 ./
 projectLocation="$PWD"
 CLASSPATH="${projectLocation}/bin:${projectLocation}/lib/*"
