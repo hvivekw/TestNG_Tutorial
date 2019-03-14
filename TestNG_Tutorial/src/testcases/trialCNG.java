@@ -36,7 +36,9 @@ public class trialCNG {
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS) ;	
 
 		/* Input from excel*/
-		File src = new File("C:\\ExcelData\\TestData.xlsx");
+		//File src = new File("C:\\ExcelData\\TestData.xlsx");
+		File src = new File(projectPath+"\\excel\\TestData.xlsx");
+		
 		FileInputStream fis = new FileInputStream(src);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet1 = wb.getSheetAt(0);
