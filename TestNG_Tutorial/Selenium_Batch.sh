@@ -1,6 +1,6 @@
-set projectLocation=%pwd%
-cd %projectLocation%
-set classpath=%projectLocation%\bin;%projectLocation%\lib\*
-echo %classpath%
-java org.testng.TestNG %projectLocation%\testng.xml
+cd TestNG_Tutorial
+chmod -R 777 ./
+projectLocation="$PWD"
+CLASSPATH="${projectLocation}/bin:${projectLocation}/lib/*"
+java -cp ${projectLocation}/bin:${projectLocation}/lib/* org.testng.TestNG ${projectLocation}/testng.xml
 pause
