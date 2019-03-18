@@ -21,11 +21,17 @@ public class trialCNG {
 	@Test(priority=1)
 	public void Login() throws InterruptedException, IOException{
 
-		/* Initialize Chrome browser */
+		/* Initialize Chrome browser locally*/
 		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
-		
+
 		String projectPath = System.getProperty("user.dir");
+		
+		/* Initialize Chrome driver for linux */
 		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver");
+
+		/* Initialize Chrome driver for windows */
+		//System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver.exe");
+
 		driver = new ChromeDriver();
 
 		/* Launch CNG application*/
@@ -38,7 +44,7 @@ public class trialCNG {
 		/* Input from excel*/
 		//File src = new File("C:\\ExcelData\\TestData.xlsx");
 		File src = new File(projectPath+"/excel/TestData.xlsx");
-		
+
 		FileInputStream fis = new FileInputStream(src);
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet1 = wb.getSheetAt(0);
@@ -49,7 +55,7 @@ public class trialCNG {
 		driver.findElement(By.id("userid")).sendKeys(username);
 		driver.findElement(By.id("userpassword")).sendKeys(password);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();		
-		Thread.sleep(20000);		
+		Thread.sleep(5000);		
 
 	}
 	/* Click on Connected Goods Tile */
@@ -59,16 +65,16 @@ public class trialCNG {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		WebElement cng_tile_click = wait.until(ExpectedConditions.elementToBeClickable(By.id("__tile2")));
 		cng_tile_click.click();	
-		
+
 	}
 
 	@Test(priority=3)
 	public void Visual_Filters() throws InterruptedException{
-        
-		Thread.sleep(5000);
+
+		Thread.sleep(8000);
 		/* Click on BPStatus Assigned Visual Filters*/		
 
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		WebElement vf_assigned = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-labelledby='__donut1'] [transform='translate \\(-5\\,21\\)'] [aria-hidden]")));
 		vf_assigned.click();	
 
@@ -94,13 +100,10 @@ public class trialCNG {
 	public void Views_Selection() throws InterruptedException{
 		WebElement MapView, TableView, GridView;
 
-		//MapView = driver.findElement(By.id("__item14-button"));
 		MapView = driver.findElement(By.xpath("//li[1]/span[@role='presentation']"));
-		
-		//TableView = driver.findElement(By.id("__item16-button"));
 		TableView = driver.findElement(By.xpath("//li[3]/span[@role='presentation']"));
 
-		/* Assuming Map View is selected, switch to Table View */
+		/* Assuming Map View is selected by default, switch to Table View */
 		if(!MapView.isSelected()){
 			TableView.click();
 		}
@@ -108,9 +111,7 @@ public class trialCNG {
 		Thread.sleep(5000);
 
 		/*Assuming Table View is selected , switch to Grid View*/
-		//TableView = driver.findElement(By.id("__item16-button"));
 		TableView = driver.findElement(By.xpath("//li[3]/span[@role='presentation']"));
-		//GridView = driver.findElement(By.id("__item17-button"));
 		GridView = driver.findElement(By.xpath("//li[4]/span[@role='presentation']"));
 
 		if(!TableView.isSelected()){
@@ -158,6 +159,7 @@ public class trialCNG {
 		Thread.sleep(5000);
 		driver.findElement(By.id("__mbox-btn-0-content")).click();
 		Thread.sleep(5000);
+		System.out.println("Logged out successfully!");
 
 		/*close the browser instance */
 		driver.quit();
