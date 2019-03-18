@@ -62,7 +62,7 @@ public class trialCNG {
 	@Test(priority=2)
 	public void CNG_Tile_click() throws InterruptedException{
 
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 300);
 		WebElement cng_tile_click = wait.until(ExpectedConditions.elementToBeClickable(By.id("__tile2")));
 		cng_tile_click.click();	
 
@@ -71,10 +71,10 @@ public class trialCNG {
 	@Test(priority=3)
 	public void Visual_Filters() throws InterruptedException{
 
-		Thread.sleep(8000);
+		//Thread.sleep(8000);
 		/* Click on BPStatus Assigned Visual Filters*/		
 
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 300);
 		WebElement vf_assigned = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[aria-labelledby='__donut1'] [transform='translate \\(-5\\,21\\)'] [aria-hidden]")));
 		vf_assigned.click();	
 
