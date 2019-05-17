@@ -27,10 +27,10 @@ public class trialCNG {
 		String projectPath = System.getProperty("user.dir");
 		
 		/* Initialize Chrome driver for linux */
-		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver");
 
 		/* Initialize Chrome driver for windows */
-		//System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver/chromedriver.exe");
 
 		driver = new ChromeDriver();
 
