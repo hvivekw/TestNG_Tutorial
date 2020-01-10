@@ -40,5 +40,6 @@
 	<classpathentry kind="lib" path="C:/guice-3.0.jar/guice-3.0.jar"/>
 	<classpathentry kind="lib" path="C:/reportng-1.1.4.jar/reportng-1.1.4.jar"/>
 	<classpathentry kind="lib" path="C:/velocity-dep-1.4.jar/velocity-dep-1.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
